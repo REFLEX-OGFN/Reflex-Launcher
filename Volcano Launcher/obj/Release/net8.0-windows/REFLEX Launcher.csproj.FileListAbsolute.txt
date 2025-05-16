@@ -48,3 +48,4 @@ C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\ne
 C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.pdb
 C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.genruntimeconfig.cache
 C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\ref\REFLEX Launcher.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.sourcelink.json

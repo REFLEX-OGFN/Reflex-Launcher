@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("REFLEX")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.2")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2+b35e79c043a1ea3caa63d7ba646ba610814cc4fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("REFLEX Launcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("REFLEX Launcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.2")]
