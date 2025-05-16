@@ -1,0 +1,30 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:Volcano_Launcher.Pages"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    x:Class="Volcano_Launcher.Pages.Home"
+    mc:Ignorable="d" 
+    Height="569" Width="788"
+    Title="REFLEX Home"
+    Loaded="Page_Loaded">
+
+    <Grid x:Name="MainGrid" Opacity="0">
+        <Grid.RenderTransform>
+            <TranslateTransform x:Name="SlideTransform" X="100" />
+        </Grid.RenderTransform>
+
+        <Border BorderBrush="#FF929292" BorderThickness="1" HorizontalAlignment="Center" CornerRadius="9,9,9,9" Height="108" Margin="0,25,0,0" VerticalAlignment="Top" Width="718">
+            <Border BorderBrush="Black" HorizontalAlignment="Left" Height="108" Margin="-1,0,0,0" VerticalAlignment="Center" Width="118">
+                <Border.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Pages/icon.png"/>
+                </Border.Background>
+            </Border>
+        </Border>
+
+        <ui:TextBlock HorizontalAlignment="Left" Height="39" Margin="198,53,0,0" TextWrapping="Wrap" Text="Welcome," VerticalAlignment="Top" Width="85" Foreground="White" FontSize="18"/>
+        <ui:TextBlock x:Name="UsernameTextBlock" HorizontalAlignment="Left" Height="39" Margin="283,53,0,0" TextWrapping="Wrap" Text="&lt;Player&gt;" VerticalAlignment="Top" Width="333" Foreground="White" FontWeight="Bold" FontSize="18" RenderTransformOrigin="0.184,0.359"/>
+    </Grid>
+</Page>

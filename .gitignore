@@ -1,0 +1,8 @@
+/.vs
+/REFLEX Installer/Debug
+/REFLEX Installer/Release
+/Volcano Launcher/bin
+/Volcano Launcher/obj/*
+
+
+/Volcano Launcher/obj

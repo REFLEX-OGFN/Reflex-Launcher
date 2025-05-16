@@ -1,0 +1,20 @@
+﻿REFLEX Launcher
+1.0.2
+
+winexe
+C#
+.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\
+Volcano_Launcher
+none
+false
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\App.xaml
+7210640348
+1-1746217724
+18-1662154186
+2211458964007
+MainWindow.xaml;Pages\Donate.xaml;Pages\Home.xaml;Pages\Library.xaml;Pages\Settings.xaml;Windows\BackendFetching.xaml;Windows\LoginWindow.xaml;
+
+True
+

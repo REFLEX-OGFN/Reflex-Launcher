@@ -1,0 +1,50 @@
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\REFLEX Launcher.exe
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\REFLEX Launcher.deps.json
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\REFLEX Launcher.runtimeconfig.json
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\REFLEX Launcher.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\REFLEX Launcher.pdb
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\DiscordRPC.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\DnsClient.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\INIFileParser.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\MongoDB.Bson.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\MongoDB.Driver.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\NetDiscordRpc.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\SharpCompress.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\Snappier.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\WindowsAPICodePack.Shell.CommonFileDialogs.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\Wpf.Ui.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\Wpf.Ui.Abstractions.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\bin\Release\net8.0-windows\ZstdSharp.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.csproj.AssemblyReference.cache
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Pages\Library.baml
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\MainWindow.g.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Pages\Donate.g.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Pages\Home.g.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Pages\Library.g.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Pages\Settings.g.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Windows\BackendFetching.g.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Windows\LoginWindow.g.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\App.g.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher_Content.g.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher_MarkupCompile.cache
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher_MarkupCompile.lref
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\App.baml
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\MainWindow.baml
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Pages\Donate.baml
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Pages\Home.baml
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Pages\Settings.baml
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Windows\BackendFetching.baml
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\Windows\LoginWindow.baml
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.g.resources
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.AssemblyInfoInputs.cache
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.AssemblyInfo.cs
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX L.21029DC5.Up2Date
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\refint\REFLEX Launcher.dll
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.pdb
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\REFLEX Launcher.genruntimeconfig.cache
+C:\Users\Marcel\Documents\GitHub\Reflex-Launcher\Volcano Launcher\obj\Release\net8.0-windows\ref\REFLEX Launcher.dll

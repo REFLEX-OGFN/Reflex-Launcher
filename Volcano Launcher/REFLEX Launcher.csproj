@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Volcano_Launcher</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>RELFEX.ico</ApplicationIcon>
+	<Version>1.0.2</Version>
+	<PackageId>REFLEX</PackageId>
+	<Copyright>REFLEX</Copyright>
+	<Authors>Mxrc3l, Public, razzart</Authors>
+	<AssemblyVersion>1.0.2</AssemblyVersion>
+	<FileVersion>1.0.2</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="35418553-fortnite-chapter-cover-ffe.jpg" />
+    <None Remove="fortnite-newworld.png" />
+    <None Remove="Pages\35418553-fortnite-chapter-cover-ffe.jpg" />
+    <None Remove="Pages\4af42282-c80e-4af7-98a2-119b56546f48.png" />
+    <None Remove="Pages\5a142c2038a323734f07804c84536faa.jpg" />
+    <None Remove="Pages\f6c256a1deeb17e117c76405c3f701d5b5dfc632-removebg-preview.png" />
+    <None Remove="Pages\ff7dd4f5-c796-4ac6-90ee-cebe62433c88.png-removebg-preview.png" />
+    <None Remove="Pages\icon.png" />
+    <None Remove="Pages\jonathan-criner-c2s1-weeping-woods.jpg" />
+    <None Remove="Pages\jonathan-criner-slurpyswamps-marketingimagesmall.jpg" />
+    <None Remove="Pages\RELFEX.png" />
+    <None Remove="Pages\Screenshot 2025-04-29 152618.png" />
+    <None Remove="Pages\Screenshot 2025-05-01 224312.png" />
+    <None Remove="Pages\Screenshot 2025-05-08 173625.png" />
+    <None Remove="Pages\Screenshot 2025-05-08 173723.png" />
+    <None Remove="PirateS8CH1.png" />
+    <None Remove="RELFEX.png" />
+    <None Remove="Screenshot 2025-04-08 152720.png" />
+    <None Remove="twitter-marketing-north-america-fortnite-case-study.jpg.twimg.1920.jpg" />
+    <None Remove="Windows\RELFEX.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="RELFEX.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />
+    <PackageReference Include="ini-parser" Version="2.5.2" />
+    <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
+    <PackageReference Include="NetDiscordRpc" Version="1.0.2" />
+    <PackageReference Include="WindowsAPICodePack.Shell.CommonFileDialogs" Version="1.1.5" />
+    <PackageReference Include="WPF-UI" Version="4.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="fortnite-newworld.png" />
+    <Resource Include="Pages\4af42282-c80e-4af7-98a2-119b56546f48.png" />
+    <Resource Include="Pages\icon.png" />
+    <Resource Include="RELFEX.png" />
+    <Resource Include="Windows\RELFEX.png" />
+  </ItemGroup>
+
+</Project>
