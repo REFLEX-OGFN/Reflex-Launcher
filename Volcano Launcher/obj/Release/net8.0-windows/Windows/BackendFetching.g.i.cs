@@ -74,7 +74,7 @@ namespace Volcano_Launcher.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/REFLEX Launcher;V1.0.2;component/windows/backendfetching.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/REFLEX Launcher;V1.0.3;component/windows/backendfetching.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\BackendFetching.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

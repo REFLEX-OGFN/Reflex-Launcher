@@ -15,15 +15,86 @@ namespace Volcano_Launcher.Pages
 {
     public partial class Library : Page
     {
+        private bool isInitialLoad = true;
+
         public Library()
         {
             InitializeComponent();
+            LoadSplashImage();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             Storyboard slideInStoryboard = (Storyboard)this.Resources["SlideInStoryboard"];
             slideInStoryboard.Begin();
+
+            if (isInitialLoad)
+            {
+                Storyboard importAnimation = (Storyboard)this.Resources["ImportAnimation"];
+                importAnimation.Begin();
+                isInitialLoad = false;
+            }
+        }
+
+        private void LoadSplashImage(bool animate = false)
+        {
+            string path = UpdateINI.ReadValue("Auth", "FortnitePath");
+            if (string.IsNullOrEmpty(path) || path == "NONE")
+            {
+                ImportContainer.Visibility = Visibility.Visible;
+                SplashContainer.Visibility = Visibility.Collapsed;
+                return;
+            }
+
+            string fortniteDir = Path.Combine(path, "FortniteGame");
+            string splashPath = Path.Combine(fortniteDir, "Content", "Splash");
+
+            if (Directory.Exists(splashPath))
+            {
+                string[] splashImages = Directory.GetFiles(splashPath, "*.bmp");
+                if (splashImages.Length > 0)
+                {
+                    try
+                    {
+                        var image = new BitmapImage(new Uri(splashImages[0]));
+                        SplashPreview.Source = image;
+
+                        if (animate)
+                        {
+                            Storyboard importFadeOut = (Storyboard)this.Resources["ImportFadeOut"];
+                            importFadeOut.Completed += (s, e) =>
+                            {
+                                ImportContainer.Visibility = Visibility.Collapsed;
+                                SplashContainer.Visibility = Visibility.Visible;
+                                Storyboard splashFadeIn = (Storyboard)this.Resources["SplashFadeIn"];
+                                splashFadeIn.Begin();
+                            };
+                            importFadeOut.Begin();
+                        }
+                        else
+                        {
+                            ImportContainer.Visibility = Visibility.Collapsed;
+                            SplashContainer.Visibility = Visibility.Visible;
+                            SplashContainer.Opacity = 1;
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        ImportContainer.Visibility = Visibility.Visible;
+                        SplashContainer.Visibility = Visibility.Collapsed;
+                    }
+                }
+                else
+                {
+                    ImportContainer.Visibility = Visibility.Visible;
+                    SplashContainer.Visibility = Visibility.Collapsed;
+                }
+            }
+            else
+            {
+                ImportContainer.Visibility = Visibility.Visible;
+                SplashContainer.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void Button_SelectFolder_Click(object sender, RoutedEventArgs e)
@@ -31,7 +102,7 @@ namespace Volcano_Launcher.Pages
             var dialog = new CommonOpenFileDialog
             {
                 IsFolderPicker = true,
-                Title = "REFLEX Fortnite Build",
+                Title = "Select Fortnite Build Directory",
                 Multiselect = false
             };
 
@@ -45,50 +116,20 @@ namespace Volcano_Launcher.Pages
 
                 if (Directory.Exists(fortniteDir) && Directory.Exists(engineDir) && File.Exists(exePath))
                 {
-                    PathBox.Text = selectedFolderPath;
-
                     UpdateINI.WriteToConfig("Auth", "FortnitePath", selectedFolderPath);
                     string savedPath = UpdateINI.ReadValue("Auth", "FortnitePath");
                     if (string.IsNullOrEmpty(savedPath))
                     {
                         MessageBox.Show("Failed to save Fortnite path.");
+                        return;
                     }
 
-                    string splashPath = Path.Combine(fortniteDir, "Content", "Splash");
-
-                    if (Directory.Exists(splashPath))
-                    {
-                        string[] splashImages = Directory.GetFiles(splashPath, "*.bmp");
-
-                        if (splashImages.Length > 0)
-                        {
-                            try
-                            {
-                                var image = new BitmapImage(new Uri(splashImages[0]));
-                                SplashPreview.Source = image;
-                                SplashContainer.Visibility = Visibility.Visible;
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show($"Failed to load image: {ex.Message}");
-                            }
-                        }
-                        else
-                        {
-                            SplashContainer.Visibility = Visibility.Collapsed;
-                            MessageBox.Show("No .bmp splash images found in the Splash folder.");
-                        }
-                    }
-                    else
-                    {
-                        SplashContainer.Visibility = Visibility.Collapsed;
-                        MessageBox.Show("Splash folder not found.");
-                    }
+                    LoadSplashImage(true);
                 }
                 else
                 {
                     MessageBox.Show("❌ Please make sure the folder contains both 'FortniteGame' and 'Engine' directories and the Fortnite executable.",
-                        "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        "Invalid Directory", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             }
         }

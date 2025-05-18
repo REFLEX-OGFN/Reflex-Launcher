@@ -24,7 +24,7 @@
         <Button Content="Home" Height="45" Margin="22,164,0,0" VerticalAlignment="Top" Width="168" FontWeight="Bold" BorderThickness="0,0,0,0" Click="Button_Click"/>
         <Button Content="Library" Height="45" Margin="22,214,0,0" VerticalAlignment="Top" Width="168" FontWeight="Bold" BorderThickness="0,0,0,0" Click="Button_Click_1"/>
         <Button Content="Donate" Height="45" Margin="22,264,0,0" VerticalAlignment="Top" Width="168" FontWeight="Bold" BorderThickness="0,0,0,0" Click="Button_Click_2"/>
-        <Button Content="Settings" Height="45" Margin="22,545,0,0" VerticalAlignment="Top" Width="168" FontWeight="Bold" BorderThickness="0,0,0,0" Click="Button_Click_3"/>
+        <!--Button Content="Settings" Height="45" Margin="22,545,0,0" VerticalAlignment="Top" Width="168" FontWeight="Bold" BorderThickness="0,0,0,0" Click="Button_Click_3"/!-->
         <Frame x:Name="NavigationVolcano" HorizontalAlignment="Left" Margin="212,31,0,0" VerticalAlignment="Top" Height="569" Width="788"/>
     </Grid>
 </Window>

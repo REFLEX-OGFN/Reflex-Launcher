@@ -23,6 +23,35 @@
                 From="0" To="1"
                 Duration="0:0:0.5" />
         </Storyboard>
+        
+        <Storyboard x:Key="ImportAnimation">
+            <DoubleAnimation
+                Storyboard.TargetName="ImportButton"
+                Storyboard.TargetProperty="Opacity"
+                From="0" To="1"
+                Duration="0:0:0.3" />
+            <DoubleAnimation
+                Storyboard.TargetName="ImportText"
+                Storyboard.TargetProperty="Opacity"
+                From="0" To="1"
+                Duration="0:0:0.3" />
+        </Storyboard>
+
+        <Storyboard x:Key="SplashFadeIn">
+            <DoubleAnimation
+                Storyboard.TargetName="SplashContainer"
+                Storyboard.TargetProperty="Opacity"
+                From="0" To="1"
+                Duration="0:0:0.5" />
+        </Storyboard>
+
+        <Storyboard x:Key="ImportFadeOut">
+            <DoubleAnimation
+                Storyboard.TargetName="ImportContainer"
+                Storyboard.TargetProperty="Opacity"
+                From="1" To="0"
+                Duration="0:0:0.3" />
+        </Storyboard>
     </Page.Resources>
 
     <Grid x:Name="MainGrid" Opacity="0" RenderTransformOrigin="0,0">
@@ -35,57 +64,80 @@
             <ColumnDefinition Width="25*" />
         </Grid.ColumnDefinitions>
 
-        <TextBox x:Name="PathBox"
-                 Height="2"
-                 Margin="370,338,393,0"
-                 VerticalAlignment="Top"
-                 TextWrapping="Wrap"
-                 Background="#FF272727"
-                 RenderTransformOrigin="0.5,0.5">
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
-            <TextBox.Style>
-                <Style TargetType="{x:Type TextBox}">
-                    <Style.Triggers>
-                        <DataTrigger Binding="{Binding Text, RelativeSource={RelativeSource Mode=Self}}" Value="">
-                            <Setter Property="ToolTip" Value="Game Path" />
-                        </DataTrigger>
-                    </Style.Triggers>
-                </Style>
-            </TextBox.Style>
-        </TextBox>
-
-        <Button
-                Margin="128,2,0,537"
-                VerticalAlignment="Stretch"
-                Width="43"
-                BorderThickness="0"
-                FontWeight="Bold"
-                Content="+"
-                Click="Button_SelectFolder_Click" RenderTransformOrigin="1.909,0.538" />
-
-        <Border BorderBrush="#FF003479"
+        <Border x:Name="ImportContainer" 
                 Background="#FF1E1E1E"
-                CornerRadius="9,9,9,9"
+                CornerRadius="15"
                 Margin="10,80,555,0"
                 Height="279"
                 VerticalAlignment="Top"
-                Visibility="Visible"
+                BorderBrush="#FF003479"
+                BorderThickness="1">
+            <Grid>
+                <Border Background="#FF003479" 
+                        Opacity="0.1"
+                        CornerRadius="15"/>
+                
+                <Button x:Name="ImportButton"
+                        Opacity="0"
+                        Margin="0,0,0,0"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Width="70"
+                        Height="70"
+                        BorderThickness="0"
+                        Background="#FF003479"
+                        Click="Button_SelectFolder_Click"
+                        Cursor="Hand">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}"
+                                    CornerRadius="35">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                                VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <TextBlock Text="+" 
+                             FontSize="35" 
+                             FontWeight="Bold"
+                             Foreground="White"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center"/>
+                </Button>
+                
+                <ui:TextBlock x:Name="ImportText"
+                             Opacity="0"
+                             Text="Click to Import Fortnite Build"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Bottom"
+                             Margin="0,0,0,20"
+                             Foreground="White"
+                             FontSize="14"/>
+            </Grid>
+        </Border>
+
+        <Border BorderBrush="#FF003479"
+                Background="#FF1E1E1E"
+                CornerRadius="15"
+                Margin="10,80,555,0"
+                Height="279"
+                VerticalAlignment="Top"
+                Visibility="Collapsed"
                 x:Name="SplashContainer"
                 MouseLeftButtonUp="SplashContainer_Click"
                 Cursor="Hand"
+                Opacity="0"
                 RenderTransformOrigin="0.49,0.525">
-            <Border CornerRadius="20,20,20,20" ClipToBounds="True">
-                <Image x:Name="SplashPreview"
-                       Stretch="UniformToFill"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center"/>
+            <Border CornerRadius="15" ClipToBounds="True">
+                <Grid>
+                    <Border Background="#FF1E1E1E" CornerRadius="15"/>
+                    <Border CornerRadius="15" ClipToBounds="True">
+                        <Image x:Name="SplashPreview"
+                               Stretch="UniformToFill"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
+                    </Border>
+                </Grid>
             </Border>
         </Border>
 

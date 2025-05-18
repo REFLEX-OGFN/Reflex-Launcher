@@ -8,12 +8,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>RELFEX.ico</ApplicationIcon>
-	<Version>1.0.2</Version>
+	<Version>1.0.3</Version>
 	<PackageId>REFLEX</PackageId>
 	<Copyright>REFLEX</Copyright>
 	<Authors>Mxrc3l, Public, razzart</Authors>
-	<AssemblyVersion>1.0.2</AssemblyVersion>
-	<FileVersion>1.0.2</FileVersion>
+	<AssemblyVersion>1.0.3</AssemblyVersion>
+	<FileVersion>1.0.3</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

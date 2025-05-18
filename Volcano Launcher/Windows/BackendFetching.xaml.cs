@@ -27,7 +27,7 @@ namespace Volcano_Launcher.Windows
                 Timeout = TimeSpan.FromSeconds(10)
             };
 
-            CurrentVersion = "1.0.3";
+            CurrentVersion = "1.0.4";
 
             Loaded += OnLoaded;
         }

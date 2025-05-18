@@ -26,9 +26,9 @@ namespace Volcano_Launcher
             NavigationVolcano.Content = new Donate();
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+       /* private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             NavigationVolcano.Content = new Settings();
-        }
+        }*/
     }
 }
